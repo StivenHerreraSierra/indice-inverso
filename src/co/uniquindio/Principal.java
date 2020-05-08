@@ -74,9 +74,11 @@ public class Principal extends Application {
 			indiceInverso = new IndiceInverso();
 		}
 		try {
-			indiceInverso.modificarRuta(ruta);
-			indiceInverso.generarIndiceInvertido();
-		} catch (FileIsNotDirectory|IOException e) {
+			this.indiceInverso.crearArchivos(ruta);
+			imprimirMensaje ("Se crearon los archivos con el resultado respectivo "
+					+ "en el paquete \"resultados\".", 	AlertType.INFORMATION,
+					"Resultado.");
+		} catch (IOException e) {
 			System.out.println(e.getMessage());
 			imprimirMensaje(e.getMessage(), AlertType.ERROR, "Error de ejecución.");
 		}

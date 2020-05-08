@@ -80,9 +80,6 @@ public class ControladorMenu {
 		File dir = ruta.showDialog(null);
 		if (dir != null) {
 			ventanaPrincipal.generarIndiceInvertido(dir.getPath());
-			ventanaPrincipal.imprimirMensaje ("Se crearon los archivos"
-					+ " con el resultado respectivo.", AlertType.INFORMATION,
-					"Resultado.");
 		}
 	}
 }
