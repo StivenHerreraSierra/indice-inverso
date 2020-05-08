@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="co.uniquindio.indice.controlador.ControladorMenu">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label layoutX="144.0" layoutY="49.0" text="Menú de opciones.">
+      <font>
+        <Font name="System Bold" size="20.0" />
+      </font>
+    </Label>
+    <Button fx:id="indiceInversoBtn" layoutX="144.0" layoutY="190.0" mnemonicParsing="false" text="Indice&#10;inverso" textAlignment="CENTER" />
+    <Button fx:id="sumaMatrizBtn" layoutX="276.0" layoutY="190.0" mnemonicParsing="false" text="Suma de&#10;matrices" textAlignment="CENTER" />
+    <Label layoutX="125.0" layoutY="154.0" text="Por favor seleccione que quiere hacer:" />
+  </children>
+</AnchorPane>
